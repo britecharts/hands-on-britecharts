@@ -26,6 +26,11 @@ There is a different way of building D3.js charts: by using the **Reusable Chart
     - [Bullet Chart](#bullet-chart)
     - [Heatmap](#heatmap)
     - [Scatter Plot and Bullet Chart](#scatter-plot-and-bubble-chart)
+  - [Supporting Components](#supporting-components)
+    - [Brush](#brush)
+    - [Tooltip](#tooltip)
+    - [Mini Tooltip](#mini-tooltip)
+    - [Legend](#legend)
 
 ---
 
@@ -115,3 +120,31 @@ Sometimes a simple metric includes:
 A *Scatter Plot* places points in cartesian coordinates representing two variables, and it is of great utility to **surface correlations**. Scatter Plots are popular in research, as they can surface different correlation types among the represented data. A Bubble Chart is merely a Scatter Plot with a third variable represented by the radius of the bubbles.
 
 ![scatter plot and bubble chart](/docs/img/scatter-plot-chart.png)
+
+## Supporting Components
+
+We also have components that we can use to build rich data visualizations and dashboards:
+
+### Brush
+
+You can utilize the *Brush* component to **filter time series data** to show in a chart with a simple drag and drop movement. It also allows users to movie the selection horizontally by clicking and holding to reset the filtering by clicking once somewhere in the chart.
+
+![brush](/docs/img/brush.png)
+
+### Tooltip
+
+The *Tooltip* component can be used with the line chart, stacked area chart, grouped and stacked bar charts. It features a **configurable “title” line** at the top and the data breakdown in the body of the tooltip.
+
+![tooltip](/docs/img/tooltip.png)
+
+### Mini Tooltip
+
+Our newer tooltip, *Mini-tooltip*, is currently used in Bar charts and Scatter plot/Bubble charts. It can show a title line and one or two variables in a more **simpler** design:
+
+![mini tooltip](/docs/img/mini-tooltip.png)
+
+### Legend
+
+You can use our *Legend* component along any chart, and it features two primary configurations: vertical and horizontal. You can listen for mouse events on it:
+
+![Legend](/docs/img/legend.png)
