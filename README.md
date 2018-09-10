@@ -265,6 +265,7 @@ barChart
    .isHorizontal(true)
    .hasPercentage(true)
    .percentageAxisToMaxRatio(1.3)
+   .colorSchema(colors.colorSchemas.britecharts)
    .width(containerWidth)
    .height(300);
 
