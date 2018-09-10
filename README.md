@@ -31,6 +31,7 @@ There is a different way of building D3.js charts: by using the **Reusable Chart
     - [Tooltip](#tooltip)
     - [Mini Tooltip](#mini-tooltip)
     - [Legend](#legend)
+  - [More on charts and their uses](#more-on-charts-and-their-uses)
 
 ---
 
@@ -121,30 +122,36 @@ A *Scatter Plot* places points in cartesian coordinates representing two variabl
 
 ![scatter plot and bubble chart](/docs/img/scatter-plot-chart.png)
 
-## Supporting Components
+### Supporting Components
 
 We also have components that we can use to build rich data visualizations and dashboards:
 
-### Brush
+#### Brush
 
 You can utilize the *Brush* component to **filter time series data** to show in a chart with a simple drag and drop movement. It also allows users to movie the selection horizontally by clicking and holding to reset the filtering by clicking once somewhere in the chart.
 
 ![brush](/docs/img/brush.png)
 
-### Tooltip
+#### Tooltip
 
 The *Tooltip* component can be used with the line chart, stacked area chart, grouped and stacked bar charts. It features a **configurable “title” line** at the top and the data breakdown in the body of the tooltip.
 
 ![tooltip](/docs/img/tooltip.png)
 
-### Mini Tooltip
+#### Mini Tooltip
 
 Our newer tooltip, *Mini-tooltip*, is currently used in Bar charts and Scatter plot/Bubble charts. It can show a title line and one or two variables in a more **simpler** design:
 
 ![mini tooltip](/docs/img/mini-tooltip.png)
 
-### Legend
+#### Legend
 
 You can use our *Legend* component along any chart, and it features two primary configurations: vertical and horizontal. You can listen for mouse events on it:
 
 ![Legend](/docs/img/legend.png)
+
+### More on charts and their uses
+
+* [The Data Visualization Catalogue](https://datavizcatalogue.com/index.html)
+* [Sparkline theory and practice Edward Tufte](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR) by Edward Tufte
+* [Data Visualization 101: How to Choose the Right Chart or Graph for Your Data](https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization)
