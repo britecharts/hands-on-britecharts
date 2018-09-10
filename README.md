@@ -57,7 +57,7 @@ _Grouped Bar Charts_, also named _Multi-Set Bar Charts_, are used to **show mult
 
 #### Stacked Bar Chart
 
-The \*Stacked Bar Chart shows multiple datasets one on top of the other. They **illustrate how one larger category is composed of other smaller categories graphically**.
+The _Stacked Bar Chart_ shows multiple datasets one on top of the other. They **illustrate how one larger category is composed of other smaller categories graphically**.
 
 ![stacked bar chart](/docs/img/stacked-bar-chart.png)
 
