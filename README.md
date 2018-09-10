@@ -32,6 +32,9 @@ There is a different way of building D3.js charts: by using the **Reusable Chart
     - [Mini Tooltip](#mini-tooltip)
     - [Legend](#legend)
   - [More on charts and their uses](#more-on-charts-and-their-uses)
+- [Setting Up a Basic Chart](#setting-up-a-basic-chart)
+  - [More on Britecharts](#more-on-britecharts)
+  - [Follow Up Material](#follow-up-material)
 
 ---
 
@@ -155,3 +158,133 @@ You can use our *Legend* component along any chart, and it features two primary 
 * [The Data Visualization Catalogue](https://datavizcatalogue.com/index.html)
 * [Sparkline theory and practice Edward Tufte](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR) by Edward Tufte
 * [Data Visualization 101: How to Choose the Right Chart or Graph for Your Data](https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization)
+
+## Setting Up A Basic Chart
+
+Here is the description of how we can start up and running with Britecharts. These steps are already done for you in this repository. Look at the `src` folder to see the examples of charts and their data in the `js` files.
+
+For installing the library, you can use NPM or Bower packages, CDN served scripts or directly use the Github repository. Let’s see how we do it using Yarn:
+
+```shell
+yarn add britecharts
+```
+
+We will need to create an HTML file that lods Britecharts styles and adds a container `div` we will draw our chart in. This was already done in [`index.html`](/index.html) file:
+
+```html
+<!DOCTYPE html>
+  <head>
+      [...]
+      <link rel="stylesheet" href="node_modules/britecharts/dist/css/britecharts.min.css">
+  </head>
+  <body>
+      <div class="js-container"></div>
+  </body>
+</html>
+```
+
+Next, we should create a new file where we can import the dependencies. Look at [`src/barChart.js`](/src/barChart.js) for an example. You can import dependencies like so:
+
+```js
+import * as d3 from 'd3';
+import bar from 'britecharts/dist/umd/bar.min.js';
+import colors from 'britecharts/dist/umd/colors.min.js';
+```
+
+Next up we will create your first chart. We will start with the data definition. Here, we have a piece of data:
+
+```js
+const data = [
+    {
+        "name": "Radiating",
+        "value": 0.08167
+    },
+    {
+        "name": "Opalescent",
+        "value": 0.0492
+    },
+    {
+        "name": "Shining",
+        "value": 0.02782
+    },
+    {
+        "name": "Vibrant",
+        "value": 0.04253
+    },
+    {
+        "name": "Vivid",
+        "value": 0.02702
+    },
+    {
+        "name": "Brilliant",
+        "value": 0.02288
+    }
+];
+```
+
+This data is the result of an imaginary poll we made around our team at Eventbrite. As it is category data, we will use a horizontal bar chart to represent it.
+
+Once we choose the chart type, we need to figure out the required data format to feed the component. We do this by navigating to the “Types” section of the docs – within the “API” drop-down on the documentation homepage– and searching for the bar chart.
+
+The required data format looks like the following snippet:
+
+```
+[
+    {
+        value: 1,
+        name: 'glittering'
+    },
+    {
+        value: 1,
+        name: 'luminous'
+    }
+]
+```
+
+Our original data shape is pretty much the same, so we won’t need to transform our data.
+
+Now we will need to call our chart, and for that, we will first need to create a container div and attach to it our data. We are going to check the container width and store it in a variable so that our chart adapts to the space given to it in the DOM:
+
+```js
+let barContainer = d3.select('.js-container');
+let containerWidth = barContainer.node() ? barContainer.node().getBoundingClientRect().width : false;
+```
+
+Next, we will instantiate a new bar chart, configure it, and bound it together with our data-loaded container:
+
+```js
+let barChart = new bar();
+
+barChart
+   .margin({
+        left: 120,
+        right: 20,
+        top: 20,
+        bottom: 40
+    })
+   .isHorizontal(true)
+   .hasPercentage(true)
+   .percentageAxisToMaxRatio(1.3)
+   .width(containerWidth)
+   .height(300);
+
+barContainer.datum(data).call(barChart);
+```
+
+Every Britechart has series of public properties that are configurable. In this case, we are using `margin`, `horizontal`, `usePercentage`, `percentageAxisToMaxRatio`, `width`, and `height`. You can find a description of all of them in the API Reference of the docs homepage. Here is the [Bar Chart API](http://eventbrite.github.io/britecharts/module-Bar.html).
+
+Here is how your chart should look like now:
+
+![bar chart demo example](/docs/img/bar-chart-example.png)
+
+### Now it's your turn. Clone this repository and pick one of the empty example charts with data. First you have to figure out which chart would you pick to represent this data? Duplicate the example chart and try to render a new chart.
+
+## More on Britecharts
+
+* [Britecharts Documentation Homepage](http://eventbrite.github.io/britecharts) - Docs
+* [Introducing Britecharts](https://www.eventbrite.com/engineering/introducing-britecharts/) - Blog Post
+
+## Follow Up Material
+* [Create Beautiful Test Driven Data Visualizations with D3](https://www.heartinternet.uk/blog/create-beautiful-test-driven-data-visualisations-with-d3-js) - Heatmap Blog Post
+* [React, D3 and their Ecosystem](https://www.smashingmagazine.com/2018/02/react-d3-ecosystem/) - Blog Post
+* [Britecharts React](https://eventbrite.github.io/britecharts-react) - Britecharts React wrapper
