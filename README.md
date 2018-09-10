@@ -8,6 +8,19 @@ The usual workflow when developing interactive data visualizations with D3.js is
 
 There is a different way of building D3.js charts: by using the **Reusable Chart API pattern** – a way of encapsulating D3.js code– and building our components with **Test Driven Development (TDD)**. Following those ideas, and with the help of Eventbrite’s design team, we created Britecharts.
 
+# Set Up
+
+```shell
+git clone https://github.com/Golodhros/hands-on-britecharts.git
+cd hands-on-britecharts
+yarn install
+yarn start
+```
+
+# Exercise
+
+There is a chart already ready for you to experiment with [`src/barChart.js`](./src/barChart.js). Take a look at the code and pick another `.js` file (e.g. [`src/brilliantChart.js`](./src/brilliantChart.js)) in the same folder. All other files have basic setup and data but there is no chart code. Your task would be to identify which chart the data structure in the file belongs to and draw the chart by importing the appropriate chart. It would be helpful to use [Britecharts API data model documentation](http://eventbrite.github.io/britecharts/global.html#BarChartData) as a reference.
+
 # Content
 
 - [What is Britecharts?](#what-is-britecharts)
