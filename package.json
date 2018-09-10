@@ -1,0 +1,34 @@
+{
+  "name": "hands-on-britecharts",
+  "version": "1.0.0",
+  "description": " Get started with Britecharts by following the commented example and create your first simple charts ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "webpack --config webpack.config.js --watch",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Golodhros/hands-on-britecharts.git"
+  },
+  "keywords": [
+    "britecharts",
+    "demo",
+    "starter"
+  ],
+  "author": "Golodhros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Golodhros/hands-on-britecharts/issues"
+  },
+  "homepage": "https://github.com/Golodhros/hands-on-britecharts#readme",
+  "dependencies": {
+    "britecharts": "^2.9.6",
+    "d3-selection": "^1.3.2",
+    "webpack": "^4.17.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.0"
+  }
+}
