@@ -25,7 +25,7 @@ There is a different way of building D3.js charts: by using the **Reusable Chart
   - [Performance Metrics and Variable Correlations](#performance-metrics-and-variable-correlations)
     - [Bullet Chart](#bullet-chart)
     - [Heatmap](#heatmap)
-    - [Scatter Plot and Bullet Chart](#scatter-plot)
+    - [Scatter Plot and Bullet Chart](#scatter-plot-and-bubble-chart)
 
 ---
 
@@ -109,3 +109,9 @@ Sometimes a simple metric includes:
 *Heatmap* chart shows the relation between two variables, providing a rating based on the color of every cell, using different colors or saturation of the same color to represent the rating. They usually have one category in the rows and another in the cells, and they are used to represent tabular data visually.
 
 ![Heatmap Chart](/docs/img/heatmap-chart.png)
+
+#### Scatter Plot and Bubble Chart
+
+A *Scatter Plot* places points in cartesian coordinates representing two variables, and it is of great utility to **surface correlations**. Scatter Plots are popular in research, as they can surface different correlation types among the represented data. A Bubble Chart is merely a Scatter Plot with a third variable represented by the radius of the bubbles.
+
+![scatter plot and bubble chart](/docs/img/scatter-plot-chart.png)
