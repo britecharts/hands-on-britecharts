@@ -1,6 +1,6 @@
 # Hands-on Introduction to Britecharts
 
-This is a hands-on introduction to building beatiful visualizations with _Britecharts_.
+A hands-on introduction to building beatiful visualizations using _Britecharts_.
 
 # Abstract
 
@@ -23,6 +23,9 @@ There is a different way of building D3.js charts: by using the **Reusable Chart
     - [Stacked Area Chart](#stacked-area-chart)
     - [Sparkline Chart](#sparkline-chart)
   - [Performance Metrics and Variable Correlations](#performance-metrics-and-variable-correlations)
+    - [Bullet Chart](#bullet-chart)
+    - [Heatmap](#heatmap)
+    - [Scatter Plot and Bullet Chart](#scatter-plot)
 
 ---
 
@@ -89,9 +92,20 @@ With *Stacked Area* chart you can track multiple variables evolving over time, *
 Usually a lot smaller in scale than the previous time series charts,
 *Sparkline* charts are great for **quick numerical data representation**. Originally conceived to work inserted within a text paragraph, we can also use them in small widgets of dashboards.
 
-
 ![sparkline chart](/docs/img/sparkline-chart.png)
 
 ### Performance Metrics and Variable Correlations
 
 Sometimes a simple metric includes:
+
+#### Bullet Chart
+
+*Bullet* chart contains compact visualizations that show performance metrics, and their goals as well as different steps for achievements within those metrics.
+
+![Bullet Chart](/docs/img/bullet-chart.png)
+
+#### Heatmap
+
+*Heatmap* chart shows the relation between two variables, providing a rating based on the color of every cell, using different colors or saturation of the same color to represent the rating. They usually have one category in the rows and another in the cells, and they are used to represent tabular data visually.
+
+![Heatmap Chart](/docs/img/heatmap-chart.png)
