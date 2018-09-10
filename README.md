@@ -19,6 +19,9 @@ There is a different way of building D3.js charts: by using the **Reusable Chart
     - [Stacked Bar Chart](#stacked-bar-chart)
     - [Donut Chart](#donut-chart)
   - [Time Series](#time-series)
+    - [Line Chart](#line-chart)
+    - [Stacked Area Chart](#stacked-area-chart)
+    - [Sparkline Chart](#sparkline-chart)
   - [Performance Metrics and Variable Correlations](#performance-metrics-and-variable-correlations)
 
 ---
@@ -70,6 +73,24 @@ _Donut chart_ is a variant of the Pie Chart, and as such, it shows **proportions
 ### Time Series
 
 Time Series data is a series of values of a **quantity obtained at successive times**, usually within symmetric intervals in between. We could use the following Britecharts charts for representing them:
+
+#### Line Chart
+
+It is one of the most common chart types in some fields, and it mainly **shows trends** within time series data. They could be mono or multi-line.
+
+#### Stacked Area Chart
+
+With *Stacked Area* chart you can track multiple variables evolving over time, **showing the part-to-whole relationship**, and how each category contributes to the cumulative total.
+
+![stacked area chart](/docs/img/stacked-area-chart.png)
+
+#### Sparkline Chart
+
+Usually a lot smaller in scale than the previous time series charts,
+*Sparkline* charts are great for **quick numerical data representation**. Originally conceived to work inserted within a text paragraph, we can also use them in small widgets of dashboards.
+
+
+![sparkline chart](/docs/img/sparkline-chart.png)
 
 ### Performance Metrics and Variable Correlations
 
