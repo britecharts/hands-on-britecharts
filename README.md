@@ -2,6 +2,12 @@
 
 This is a hands-on introduction to building beatiful visualizations with _Britecharts_.
 
+# Abstract
+
+The usual workflow when developing interactive data visualizations with D3.js is based on the significant number of examples that the D3 community provides. They are broad and useful, but they are not ideal. Most of the time, they **require a lot of effort to integrate into your code and to make them production-ready**.
+
+There is a different way of building D3.js charts: by using the **Reusable Chart API pattern** – a way of encapsulating D3.js code– and building our components with **Test Driven Development (TDD)**. Following those ideas, and with the help of Eventbrite’s design team, we created Britecharts.
+
 # Content
 
 - [What is Britecharts?](#what-is-britecharts)
