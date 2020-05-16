@@ -380,12 +380,13 @@ braces@^2.3.0, braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-britecharts@^2.9.6:
-  version "2.9.6"
-  resolved "https://registry.yarnpkg.com/britecharts/-/britecharts-2.9.6.tgz#e806ebdd1e5538a033cdb3195a21541d06dea471"
+britecharts@^2.15.1:
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/britecharts/-/britecharts-2.15.1.tgz#c126f5b1258407d7b4d6e2450826f3e4819417c2"
+  integrity sha512-9R0hzEx77sUC1pEtwFKyREEoxbVhvhwJAytGTC/YypXo7YOlBZnFdcRFz7D9c2kljKd7cNJA/ZpYFRsysMLl6Q==
   dependencies:
     base-64 "^0.1.0"
-    d3 "^5.0.0"
+    d3 "^5.9.2"
     lodash.assign "^4.2.0"
 
 brorand@^1.0.1:
@@ -949,9 +950,10 @@ d3-zoom@1:
     d3-selection "1"
     d3-transition "1"
 
-d3@^5.0.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/d3/-/d3-5.7.0.tgz#f189d338bdde62acf02f308918e0ec34dd7568f9"
+d3@^5.9.2:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/d3/-/d3-5.16.0.tgz#9c5e8d3b56403c79d4ed42fbd62f6113f199c877"
+  integrity sha512-4PL5hHaHwX4m7Zr1UapXW23apo6pexCgdetdJ5kTmADpG/7T9Gkxw0M0tf/pjoB63ezCCm0u5UaFYy2aMt0Mcw==
   dependencies:
     d3-array "1"
     d3-axis "1"
