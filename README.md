@@ -1,5 +1,11 @@
 # Hands-on Introduction to Britecharts
 
+> **Written for Britecharts v2.** The accessor names, `isLoading` state and data shapes below predate the [v3 monorepo][v3] and its [migration guide][migrationGuide]; charts built by following this guide will not match the current `@britecharts/*` API without changes.
+
+[v3]: https://github.com/britecharts/britecharts
+[migrationGuide]: https://britecharts.github.io/britecharts/docs/how-tos/migration-guide-2-to-3
+
+
 A hands-on introduction to building beatiful visualizations using _Britecharts_.
 
 # Abstract
@@ -11,7 +17,7 @@ There is a different way of building D3.js charts: by using the **Reusable Chart
 # Set Up
 
 ```shell
-git clone https://github.com/Golodhros/hands-on-britecharts.git
+git clone https://github.com/britecharts/hands-on-britecharts.git
 cd hands-on-britecharts
 yarn install
 yarn start
